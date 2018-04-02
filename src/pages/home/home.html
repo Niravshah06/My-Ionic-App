@@ -1,0 +1,22 @@
+<ion-header>
+  <ion-navbar>
+    <ion-title>
+      World's Best Team
+    </ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content >
+
+    <ion-item-sliding *ngFor="let f of footballTeams">
+      <ion-item style="cursor: pointer">
+        <ion-card (click)="do(f)">
+          <div class="card-title">Ranking :{{f.rank}}</div>
+          <ion-img  width="125" height="125"  src={{f.image}}></ion-img>
+          <div style="font-weight: bold;" class="card-title">{{f.title}} :{{f.stadium}}</div>
+
+        </ion-card>
+      </ion-item>
+    </ion-item-sliding>
+
+</ion-content>

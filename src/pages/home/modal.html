@@ -1,0 +1,27 @@
+
+
+<ion-header>
+  <ion-navbar>
+    <ion-title>
+      {{footballTeam.title}}
+    </ion-title>
+    <ion-buttons end>
+      <button ion-button  (click)="closeModal()">
+
+        <ion-icon    name="close"></ion-icon>
+
+      </button>
+    </ion-buttons>
+  </ion-navbar>
+
+</ion-header>
+
+
+
+
+<ion-content padding>
+<b>
+  <div>Details:{{footballTeam.description}}</div></b>
+  <br><br>
+<a href={{footballTeam.link}} target="_blank">More Information</a>
+</ion-content>
